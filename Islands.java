@@ -1,15 +1,15 @@
 class Solution {
 
     final int[][] diff = {
-        {0, -1},   // left
-        {0, 1},    // right
-        {-1, 0},   // up
-        {1, 0}     // down
+        {0, -1},   
+        {0, 1},    
+        {-1, 0},   
+        {1, 0}     
     };
 
     private void dfs(char[][] grid, int R, int C, int row, int col) {
 
-        grid[row][col] = '0'; // mark as visited
+        grid[row][col] = '0'; 
 
         for (int i = 0; i < 4; i++) {
 
